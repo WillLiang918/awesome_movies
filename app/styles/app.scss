@@ -9,11 +9,11 @@
   color: inherit;
 
   background: transparent;
-}
+}*/
 
 li, ul {
   list-style: none;
-}*/
+}
 
 .group:after {
   clear: both;
@@ -21,34 +21,52 @@ li, ul {
   display: block;
 }
 
+/*Movie Index Page*/
 .container-fluid {
   min-width: 800px;
   text-align: center;
 }
 
-.col-xs-15 {
-  width:20%;
+.movie-list-items {
+  width: 20%;
   margin: auto;
+  height: 150px;
+  padding: 10px;
+  div {
+    height: 100%;
+  }
+  &:hover {
+    border: 5px solid blue;
+    transform: scale(.95);
+  }
 }
 
+/*Movie Show Page*/
 .movie-info {
   width: 800px;
   border: 2px solid black;
   margin: auto;
-}
-
-.movie-info > * {
-  padding: 10px;
+  > * {
+    padding: 10px;
+  }
 }
 
 .movie-poster {
-  border: 2px solid black;
+  border: 2px solid green;
   width: 30%;
   float: left;
 }
 
 .movie-details {
-  border: 2px solid black;
+  border: 2px solid gold;
   width: 70%;
   float: left;
+}
+
+.actors > * {
+  float: left;
+  padding: 10px;
+  &:first-child {
+    padding-left: 0;
+  }
 }

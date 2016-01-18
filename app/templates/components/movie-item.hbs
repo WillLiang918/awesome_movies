@@ -6,10 +6,10 @@
     <h2>{{model.title}}</h2>
     <h2>{{model.year}}</h2>
     <p>{{model.synopsis}}</p>
-    <p>
+    <li class="actors">
       {{#each model.actors as |actor|}}
        <p>{{actor.name}}</p>
       {{/each}}
-    </p>
+    </li>
   </div>
 </div>

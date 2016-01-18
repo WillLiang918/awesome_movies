@@ -1,10 +1,15 @@
 <div class="container-fluid">
   <ul class="col-xs-12 movie-container">
     {{#each model as |movie index|}}
-      <li class="col-xs-2 col-xs-15">
+      <li class="col-xs-2 movie-list-items">
         {{#link-to 'movie' movie}}
+        <div class="movie-poster">
+          <img class="" {{bind-attr src=movie.poster}}>
+        </div>
+        <div class="movie-details">
           <p>{{movie.title}}</p>
           <p>{{movie.year}}</p>
+        </div>
         {{/link-to}}
       </li>
     {{/each}}
