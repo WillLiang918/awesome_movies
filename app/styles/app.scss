@@ -21,23 +21,42 @@ li, ul {
   display: block;
 }
 
-/*Movie Index Page*/
+// Poster
+.poster {
+  border: 2px solid green;
+  float: left;
+}
+
+// Movie Details
+.details {
+  border: 2px solid gold;
+  float: left;
+}
+
+// Movie Index Page
 .container-fluid {
-  min-width: 800px;
+  min-width: 1000px;
   text-align: center;
 }
 
 .movie-list-items {
   width: 20%;
-  margin: auto;
-  height: 150px;
+  height: 180px;
   padding: 10px;
   div {
     height: 100%;
   }
   &:hover {
-    border: 5px solid blue;
-    transform: scale(.95);
+    border: 1px solid blue;
+    transform: scale(1.1);
+    opacity: .5;
+    -webkit-filter: grayscale(10%);
+  }
+  .movie-poster{
+    width: 100px;
+  }
+  .movie-details {
+    width: 100px;
   }
 }
 
@@ -49,18 +68,13 @@ li, ul {
   > * {
     padding: 10px;
   }
-}
-
-.movie-poster {
-  border: 2px solid green;
-  width: 30%;
-  float: left;
-}
-
-.movie-details {
-  border: 2px solid gold;
-  width: 70%;
-  float: left;
+  .movie-poster {
+    width: 220px;
+    height: 320px;
+  }
+  .movie-details {
+    width: 560px;
+  }
 }
 
 .actors > * {

@@ -3,10 +3,10 @@
     {{#each model as |movie index|}}
       <li class="col-xs-2 movie-list-items">
         {{#link-to 'movie' movie}}
-        <div class="movie-poster">
+        <div class="movie-poster poster">
           <img class="" {{bind-attr src=movie.poster}}>
         </div>
-        <div class="movie-details">
+        <div class="movie-details details">
           <p>{{movie.title}}</p>
           <p>{{movie.year}}</p>
         </div>
