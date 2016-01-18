@@ -1,0 +1,54 @@
+/*body, div, li, ul, p, h1, h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  text-align: inherit;
+  text-decoration;
+  color: inherit;
+
+  background: transparent;
+}
+
+li, ul {
+  list-style: none;
+}*/
+
+.group:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.container-fluid {
+  min-width: 800px;
+  text-align: center;
+}
+
+.col-xs-15 {
+  width:20%;
+  margin: auto;
+}
+
+.movie-info {
+  width: 800px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.movie-info > * {
+  padding: 10px;
+}
+
+.movie-poster {
+  border: 2px solid black;
+  width: 30%;
+  float: left;
+}
+
+.movie-details {
+  border: 2px solid black;
+  width: 70%;
+  float: left;
+}

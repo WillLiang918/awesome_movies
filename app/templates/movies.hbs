@@ -1,11 +1,1 @@
-<h3>Movie Index</h3>
-<ul>
-  {{#each model as |movie|}}
-    {{log "Movie is: " movie}}
-    <li>
-      {{#link-to 'movie' movie}}
-        {{movie.title}}
-      {{/link-to}}
-    </li>
-  {{/each}}
-</ul>
+{{movie-list model=model}}

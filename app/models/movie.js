@@ -4,5 +4,8 @@ export default DS.Model.extend({
   title: DS.attr("string"),
   year: DS.attr("string"),
   synopsis: DS.attr("string"),
-  castings: DS.hasMany("casting")
+  poster: DS.attr("string"),
+  actors: DS.attr({
+    name: DS.attr("string")
+  })
 });
