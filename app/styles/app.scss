@@ -21,16 +21,25 @@ li, ul {
   display: block;
 }
 
-// Poster
+img {
+  height: 100%;
+  width: 100%;
+}
+
 .poster {
-  border: 2px solid green;
   float: left;
 }
 
-// Movie Details
 .details {
-  border: 2px solid gold;
   float: left;
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+#title {
+  text-align: center;
 }
 
 // Movie Index Page
@@ -41,22 +50,20 @@ li, ul {
 
 .movie-list-items {
   width: 20%;
-  height: 180px;
+  height: 160px;
   padding: 10px;
   div {
     height: 100%;
   }
   &:hover {
-    border: 1px solid blue;
     transform: scale(1.1);
-    opacity: .5;
-    -webkit-filter: grayscale(10%);
   }
   .movie-poster{
     width: 100px;
   }
   .movie-details {
     width: 100px;
+    border: 1px solid black;
   }
 }
 
@@ -65,14 +72,12 @@ li, ul {
   width: 800px;
   border: 2px solid black;
   margin: auto;
-  > * {
-    padding: 10px;
-  }
   .movie-poster {
     width: 220px;
     height: 320px;
   }
   .movie-details {
+    padding: 10px;
     width: 560px;
   }
 }
